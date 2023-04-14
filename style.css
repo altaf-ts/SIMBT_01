@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.portfolio {
+  width: 100%;
+  height: 110vh;
+  background-image: url(task5.jpg);
+  
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.logoonbanner {
+  max-height:400px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #ffffff;
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  color: hsl(0, 100%, 1%);
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: rgb(51, 152, 229);
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.button {
+  color: #eee9e9;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: rgb(24, 32, 7);
+  border: 2px solid rgb(18, 49, 49);
+}
+.btn:hover {
+  background: transparent;
+  border-color: rgb(199, 220, 112);
+  color: rgb(177, 201, 198);
+}
+.text {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+.text .headtitle {
+  color: #b70a0a;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #dde7f0 20.69%,
+    #0ca2ed 50.19%,
+    rgb(209, 225, 225) 79.69%
+  );
+  -webkit-background-clip': text;
+  -webkit-text-fill-color: transparent;
+}
+.text h1 {
+  color: #100d01;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+.text h1 span {
+  color: rgb(0, 7, 7);
+}
+.text p {
+  width: 55%;
+  color: rgb(1, 34, 74);
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
